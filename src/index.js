@@ -1,55 +1,5 @@
-// const express = require("express")
-// const mongoose = require("mongoose")
-// const User = require("./models/User")
-// const cors = require("cors")
-// const app = express()
-// const jwt = require('jsonwebtoken');
-// const bcrypt = require("bcryptjs")
-// const port = 3001
+
 const secret = "rand string"
-// //const salt = bcrypt.genSalt(10) this is wrong insted use 
-// const salt = bcrypt.genSaltSync(10)
-// try {
-//     async function dbConnect(){
-//         await mongoose.connect("mongodb+srv://raghavonpc:NJup7CZB7XRV6Izn@cluster0.ypohz1j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-        
-//         console.log("connect to db sucessfully");
-//     } 
-
-// } catch (error) {
-//     return console.log("error while connecting to db" , error);
-// }
-// // mongoose.connect("mongodb+srv://raghavonpc:NJup7CZB7XRV6Izn@cluster0.ypohz1j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-// // .then(()=>console.log("connected to server"))
-// dbConnect()
-// app.use(cors())
-
-// app.get('/', (req, res) => {
-//     res.send('hello world')
-    
-// })
-
-// app.post("/register", async(req,res)=>{
-//     const{username,password} = req.body
-//     try {
-//         const userDoc = await User.create({username,
-//             password:bcrypt.hashSync(password,salt)
-//         })
-//         res.json("scucess")
-//     } catch (error) {
-//         res.status(400).json(error)
-//     }
-// })
-
-
-//   app.listen(port, () => {
-//     console.log(`Example app listening on port ${port}`)
-// })
-
-
-
-
-
 const express = require("express");
 const mongoose = require("mongoose");
 const User = require("../models/User");
